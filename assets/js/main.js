@@ -191,7 +191,7 @@
           spaceBetween: a.spaceBetween || 24,
           loop: !1 !== a.loop,
           speed: a.speed || 1e3,
-          // autoplay: c || { delay: 6e3, disableOnInteraction: !1 },
+          autoplay: c || { delay: 6e3, disableOnInteraction: !1 },
           navigation: { nextEl: n.get(0), prevEl: s.get(0) },
           pagination: {
             el: i,

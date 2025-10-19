@@ -1117,6 +1117,35 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/nice-select.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // ✅ سكربت لإعادة تفعيل فحص العناصر (Inspect Element) إذا تم تعطيله
+
+// 1. السماح بزر الفأرة الأيمن
+document.addEventListener('contextmenu', function (e) {
+  e.stopPropagation(); // يمنع أي سكربت آخر من اعتراض الحدث
+}, true);
+
+// 2. السماح بكل اختصارات الكيبورد (F12 - Ctrl+Shift+I - إلخ)
+document.addEventListener('keydown', function (e) {
+  e.stopPropagation();
+}, true);
+
+// 3. إلغاء أي أكواد قد تمنع أو تعطل الأحداث الافتراضية
+document.oncontextmenu = null;
+document.onkeydown = null;
+document.onkeypress = null;
+document.onmousedown = null;
+
+// 4. حذف أي listeners أضيفت على <html> أو <body> تمنع الفحص
+['contextmenu', 'keydown', 'keypress', 'mousedown'].forEach(eventType => {
+  window.removeEventListener(eventType, window, true);
+  document.removeEventListener(eventType, document, true);
+});
+
+// ✅ تنبيه بسيط في الكونسول للتأكيد
+console.log("✅ تم إعادة تفعيل الفحص (Inspect Element) بنجاح");
+
+    </script>
 </body>
 
 </html>
