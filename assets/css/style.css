@@ -31007,4 +31007,12 @@ html[dir="rtl"] {
 .th-mobile-menu ul .menu-item-has-children>a:after{
     float: left;
 }
+.breadcumb-menu{
+    direction: ltr;
+}
+.why-card-1.style-2 .count {
+    position: absolute;
+    right: unset;
+    left: 40px;
+}
 }
