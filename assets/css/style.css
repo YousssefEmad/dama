@@ -21023,7 +21023,8 @@ input {
 
 .counter-sec1 {
     position: relative;
-    z-index: 2
+    z-index: 2;
+    background-attachment: fixed;
 }
 
 .counter-sec1:before {
