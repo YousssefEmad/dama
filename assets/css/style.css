@@ -19823,7 +19823,8 @@ input {
     border-radius: 16px;
     -webkit-transition: .4s;
     transition: .4s;
-    border: 1px solid var(--gray-color2)
+    border: 1px solid #111827;
+    background-color: #18191b;
 }
 
 .team-card:hover .team-content {
@@ -19887,7 +19888,7 @@ input {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 22px;
-    color: var(--black-color);
+    color: #fff;
     -webkit-transition: .4s;
     transition: .4s
 }
@@ -19913,7 +19914,7 @@ input {
     font-size: 14px;
     margin-inline-end: 7px;
     border: 1px solid var(--th-border-color);
-    color: var(--title-color)
+    color: #fff
 }
 
 .team-card .team-content .th-social a:hover {
